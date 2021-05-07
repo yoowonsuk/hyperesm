@@ -1,0 +1,9 @@
+FROM alpine:3
+
+LABEL maintainer="seungjin_lee2@tmax.co.kr"
+
+RUN apk update ; \
+	apk upgrade ; \
+	apk add openjdk8 ; \
+	apk add openssl ; \
+	apk add bash
